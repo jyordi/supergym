@@ -163,7 +163,7 @@
         // Mostrar el indicador de carga
         document.getElementById('loading').style.display = 'block';
 
-        const response = await fetch('data/exercises.json');
+        const response = await fetch('exercises.json');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
